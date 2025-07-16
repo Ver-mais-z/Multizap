@@ -1,0 +1,20 @@
+Código Fonte 4.8.2 e instalador nessa mesma pasta.
+
+Para a instalação você precisa de:
+
+Uma VPS Ubuntu 20.04 ou superior (configuração recomendada: 4 VCPU's + 8 GB RAM)
+
+Subdominio para o Frontend - Seu frontend
+Subdominio para a API - Seu backend
+
+Inicialmente, usamos e indicamos a CONTABO ou HETZNER (abaixo). No entanto, evidentemente, não podemos nos responsabilizar pelos serviços prestados por elas.
+
+https://contabo.com/en/vps/cloud-vps-1/?image=ubuntu.267&qty=1&contract=1&storage-type=vps-1-400-gb
+
+Domínio:
+https://www.hostinger.com.br/registro-de-dominio; ou
+https://www.hostgator.com.br/registro-de-dominio
+
+Comando no terminal da VPS para instalar estando na pasta do instalador:
+
+chmod +x instalar_primaria instalar_nova_instancia && ./instalar_primaria
