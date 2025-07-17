@@ -1,0 +1,177 @@
+/* Estilos específicos para PWA - Apenas para página de contatos */
+
+/* Estilos para página de contatos em PWA */
+@media (display-mode: standalone) {
+  /* Seletores específicos para página de contatos */
+  [data-page="contacts"],
+  .contacts-page,
+  .MuiTable-root,
+  .MuiTableContainer-root {
+    scrollbar-gutter: stable !important;
+  }
+  
+  /* Estilos específicos para scrollbars webkit em PWA - apenas contatos */
+  [data-page="contacts"] ::-webkit-scrollbar,
+  .contacts-page ::-webkit-scrollbar,
+  .MuiTable-root ::-webkit-scrollbar,
+  .MuiTableContainer-root ::-webkit-scrollbar {
+    width: 14px !important;
+    height: 14px !important;
+    display: block !important;
+    -webkit-appearance: none !important;
+  }
+
+  [data-page="contacts"] ::-webkit-scrollbar-track,
+  .contacts-page ::-webkit-scrollbar-track,
+  .MuiTable-root ::-webkit-scrollbar-track,
+  .MuiTableContainer-root ::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+    border-radius: 7px !important;
+  }
+
+  [data-page="contacts"] ::-webkit-scrollbar-thumb,
+  .contacts-page ::-webkit-scrollbar-thumb,
+  .MuiTable-root ::-webkit-scrollbar-thumb,
+  .MuiTableContainer-root ::-webkit-scrollbar-thumb {
+    background: #065183 !important;
+    border-radius: 7px !important;
+    border: 2px solid #f1f1f1 !important;
+    background-clip: content-box !important;
+  }
+
+  [data-page="contacts"] ::-webkit-scrollbar-thumb:hover,
+  .contacts-page ::-webkit-scrollbar-thumb:hover,
+  .MuiTable-root ::-webkit-scrollbar-thumb:hover,
+  .MuiTableContainer-root ::-webkit-scrollbar-thumb:hover {
+    background: #004066 !important;
+  }
+
+  [data-page="contacts"] ::-webkit-scrollbar-corner,
+  .contacts-page ::-webkit-scrollbar-corner,
+  .MuiTable-root ::-webkit-scrollbar-corner,
+  .MuiTableContainer-root ::-webkit-scrollbar-corner {
+    background: #f1f1f1 !important;
+  }
+
+  /* Para tema escuro - apenas contatos */
+  [data-theme="dark"][data-page="contacts"] ::-webkit-scrollbar-track,
+  [data-theme="dark"] .contacts-page ::-webkit-scrollbar-track,
+  [data-theme="dark"] .MuiTable-root ::-webkit-scrollbar-track,
+  [data-theme="dark"] .MuiTableContainer-root ::-webkit-scrollbar-track {
+    background: #2b2b2b !important;
+  }
+
+  [data-theme="dark"][data-page="contacts"] ::-webkit-scrollbar-thumb,
+  [data-theme="dark"] .contacts-page ::-webkit-scrollbar-thumb,
+  [data-theme="dark"] .MuiTable-root ::-webkit-scrollbar-thumb,
+  [data-theme="dark"] .MuiTableContainer-root ::-webkit-scrollbar-thumb {
+    border: 2px solid #2b2b2b !important;
+  }
+
+  [data-theme="dark"][data-page="contacts"] ::-webkit-scrollbar-corner,
+  [data-theme="dark"] .contacts-page ::-webkit-scrollbar-corner,
+  [data-theme="dark"] .MuiTable-root ::-webkit-scrollbar-corner,
+  [data-theme="dark"] .MuiTableContainer-root ::-webkit-scrollbar-corner {
+    background: #2b2b2b !important;
+  }
+
+  /* Garante que containers scrolláveis tenham overflow visível - apenas contatos */
+  [data-page="contacts"] .MuiPaper-root,
+  .contacts-page .MuiPaper-root,
+  .MuiTableContainer-root,
+  [data-page="contacts"] [class*="mainPaper"],
+  .contacts-page [class*="mainPaper"] {
+    overflow: auto !important;
+    scrollbar-width: auto !important;
+  }
+
+  /* Específico para lista de contatos */
+  .MuiTable-root {
+    min-height: 400px;
+  }
+
+  /* Firefox em PWA - apenas contatos */
+  [data-page="contacts"],
+  .contacts-page,
+  .MuiTable-root,
+  .MuiTableContainer-root {
+    scrollbar-width: auto !important;
+    scrollbar-color: #065183 #f1f1f1 !important;
+  }
+
+  [data-theme="dark"][data-page="contacts"],
+  [data-theme="dark"] .contacts-page,
+  [data-theme="dark"] .MuiTable-root,
+  [data-theme="dark"] .MuiTableContainer-root {
+    scrollbar-color: #4a90e2 #2b2b2b !important;
+  }
+}
+
+/* Estilos para quando PWA está instalado mas não detectado como standalone - apenas contatos */
+body.pwa-installed [data-page="contacts"] ::-webkit-scrollbar,
+body.pwa-installed .contacts-page ::-webkit-scrollbar,
+body.pwa-installed .MuiTable-root ::-webkit-scrollbar,
+body.pwa-installed .MuiTableContainer-root ::-webkit-scrollbar {
+  width: 14px !important;
+  height: 14px !important;
+  display: block !important;
+  -webkit-appearance: none !important;
+}
+
+body.pwa-installed [data-page="contacts"] ::-webkit-scrollbar-track,
+body.pwa-installed .contacts-page ::-webkit-scrollbar-track,
+body.pwa-installed .MuiTable-root ::-webkit-scrollbar-track,
+body.pwa-installed .MuiTableContainer-root ::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+  border-radius: 7px !important;
+}
+
+body.pwa-installed [data-page="contacts"] ::-webkit-scrollbar-thumb,
+body.pwa-installed .contacts-page ::-webkit-scrollbar-thumb,
+body.pwa-installed .MuiTable-root ::-webkit-scrollbar-thumb,
+body.pwa-installed .MuiTableContainer-root ::-webkit-scrollbar-thumb {
+  background: #065183 !important;
+  border-radius: 7px !important;
+  border: 2px solid #f1f1f1 !important;
+  background-clip: content-box !important;
+}
+
+body.pwa-installed [data-page="contacts"] ::-webkit-scrollbar-thumb:hover,
+body.pwa-installed .contacts-page ::-webkit-scrollbar-thumb:hover,
+body.pwa-installed .MuiTable-root ::-webkit-scrollbar-thumb:hover,
+body.pwa-installed .MuiTableContainer-root ::-webkit-scrollbar-thumb:hover {
+  background: #004066 !important;
+}
+
+body.pwa-installed [data-page="contacts"] ::-webkit-scrollbar-corner,
+body.pwa-installed .contacts-page ::-webkit-scrollbar-corner,
+body.pwa-installed .MuiTable-root ::-webkit-scrollbar-corner,
+body.pwa-installed .MuiTableContainer-root ::-webkit-scrollbar-corner {
+  background: #f1f1f1 !important;
+}
+
+/* Força overflow auto em containers importantes quando PWA - apenas contatos */
+body.pwa-installed [data-page="contacts"] .MuiPaper-root,
+body.pwa-installed .contacts-page .MuiPaper-root,
+body.pwa-installed .MuiTableContainer-root,
+body.pwa-installed [data-page="contacts"] [class*="mainPaper"],
+body.pwa-installed .contacts-page [class*="mainPaper"] {
+  overflow: auto !important;
+  scrollbar-width: auto !important;
+  scrollbar-gutter: stable !important;
+}
+
+/* Fallback para garantir que scrollbars sempre apareçam quando necessário */
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Melhorar a experiência de scroll em touch devices - apenas contatos */
+[data-page="contacts"],
+.contacts-page,
+.MuiTable-root,
+.MuiTableContainer-root {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
